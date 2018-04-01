@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>樱花飘落</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/yinghua.js"></script>
+    <meta charset="utf-8">
+</head>
+    <body>
+        <div class="cherry">
+        <img id="yinghua" src="/image/yinghua.png" alt="" >
+        </div>
+        <script>
+            $(function(){
+                $('.cherry').Cherry_Blossoms({
+                    is_Cherry:true,//是否生成樱花
+                    image_min:10,//花瓣最小宽度和高度
+                    image_max:50,//花瓣最大宽度和高度
+                    time_min:10000,//花瓣最快下坠时间
+                    time_max:20000,//花瓣最慢下坠时间
+                    interval:500//花瓣生成时间间隔
+                })
+            })
+        </script>
+        <audio src="image/%E5%A4%A9%E9%96%80%20-%20%E6%83%B3%E3%81%84%E5%87%BA%E3%81%AF%E9%81%A0%E3%81%8F%E3%81%AE%E6%97%A5%E3%80%85.mp3" autoplay  controls loop ></audio>
+    </body>
+</html>
